@@ -1,3 +1,6 @@
+# NLP4MatSci-HoneyBee
+This repository contains the dataset and code for our EMNLP'23 publication: "HoneyBee: Progressive Instruction Finetuning of Large Language Models for Materials Science".  
+
 **Single GPU**
 - for LLaMA
 ```
