@@ -25,6 +25,8 @@ python -m torch.distributed.launch --nproc_per_node 4  \
 python3 generate.py  --data ./data/formatted_cot_data/train_instructions_from_chatgpt.json --model_type llama
 
 ```
+### Instructions Data
+You can find our [instructions-based data](https://zenodo.org/records/10119842) for HonyeBee training and test via Zenodo.
 
 ### QA   
 If you have any questions about this code, feel free to email yu.song@umontreal.ca. I will response as soon as possible.
