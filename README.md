@@ -20,11 +20,17 @@ python -m torch.distributed.launch --nproc_per_node 4  \
     --per_gpu_train_batch_size 4 --learning_rate 1e-4 --epochs 10
 ```
 
-### Inference
+### Inference (for debug)
 ```
-python3 generate.py  --data ./data/formatted_cot_data/train_instructions_from_chatgpt.json --model_type llama
+python generate.py  --data ./data/formatted_cot_data/train_instructions_from_chatgpt.json --model_type llama
 
 ```
+
+### Inference (for batch prediction)
+、、、
+python predict.py --model_type llama --size 7b --data ./data/formatted_cot_data/test_xxx.json --predict_batch_size 4 --cutoff_len 2048 --lora_dir ./saved_models/llama-7b-hf/lora
+、、、
+
 ### Instructions Data
 You can find our [instructions-based data](https://zenodo.org/records/10119842) for HonyeBee training and test via Zenodo.
 
