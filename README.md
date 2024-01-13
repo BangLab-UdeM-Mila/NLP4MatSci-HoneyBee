@@ -27,9 +27,9 @@ python generate.py  --data ./data/formatted_cot_data/train_instructions_from_cha
 ```
 
 ### Inference (for batch prediction)
-、、、
+```
 python predict.py --model_type llama --size 7b --data ./data/formatted_cot_data/test_xxx.json --predict_batch_size 4 --cutoff_len 2048 --lora_dir ./saved_models/llama-7b-hf/lora
-、、、
+```
 
 ### Instructions Data
 You can find our [instructions-based data](https://zenodo.org/records/10119842) for HonyeBee training and test via Zenodo.
